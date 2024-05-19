@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Layout } from "antd";
+import Sider from "@/components/Sider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex min-h-[1000px]">
+          <Sider/>
+          <div className="p-[20px]">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
