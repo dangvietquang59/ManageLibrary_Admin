@@ -1,6 +1,11 @@
+import { Button, Table } from "antd";
+
 function Author() {
     return ( 
-        <div>author page</div>
+        <div>
+            <Button>Thêm tác giả</Button>
+            <Table/>
+        </div>
      );
 }
 

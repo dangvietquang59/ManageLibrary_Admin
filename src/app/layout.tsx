@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex min-h-[1000px]">
           <Sider/>
-          <div className="p-[20px]">{children}</div>
+          <div className="p-[20px] w-[100%]">{children}</div>
         </div>
       </body>
     </html>
